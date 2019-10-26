@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      show-sql: true
+database0:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3310/sharding_0?serverTimeZone=UTC&useUnicode=true&characterEncoding=utf-8
+  username: root
+  password: 123456
+  databaseName: sharding_0
+database1:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3310/sharding_1?serverTimeZone=UTC&useUnicode=true&characterEncoding=utf-8
+  username: root
+  password: 123456
+  databaseName: sharding_1
